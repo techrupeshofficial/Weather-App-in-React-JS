@@ -19,6 +19,7 @@ function App() {
 
 
 
+
   const handleInput = (e) =>{
     setInput(e.target.value)
     console.log(e.target.value)
@@ -55,13 +56,14 @@ function App() {
    
 
 
-   {Object.keys(data).length >0 &&  
+   {Object.keys(data).length > 0 &&  
    <div className="result">
    <div className='content'>
    <img className="icon" src="https://cdn2.iconfinder.com/data/icons/weather-flat-14/64/weather02-512.png" />
-    <h2 className="city"> {data?.name} </h2>
-    <h3 className="temp"> Temperature: {((data?.main?.temp)-273.15).toFixed(2)} °C </h3>
-    <h4 className="temp"> Country:  {(data?. sys?.country)}   </h4>
+    <h2 className="city"> {data.name} </h2>
+    <h3 className="temp"> Temperature: {((data.main.temp)-273.15).toFixed(2)} °C </h3>
+    <h4 className="temp"> Country:  {(data. sys.country)}   </h4>
+    <h3 className="temp"> {(data. weather[0].description)}   </h3>
    </div>
    </div>
    }
