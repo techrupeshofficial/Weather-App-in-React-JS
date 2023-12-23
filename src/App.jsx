@@ -48,7 +48,7 @@ function App() {
   return (
     <>
     <div className="box">
-    <h1 className="heading"> Weather Apps </h1> 
+    <h1 className="heading"> Weather App </h1> 
     <div className='inpsubmit'>
     <input  type="text" className="inp" onChange={handleInput} value={input} placeholder='Enter The City Name'   onKeyDown={handleKeyDown}  />
     <button type="button" className="sbtn"  onClick={handleSearch}> Search </button>
